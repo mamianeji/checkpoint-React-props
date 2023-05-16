@@ -1,25 +1,20 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
+import Profilee from './Compponents/Profilee';
+
 
 function App() {
+  const FullName="Mamia Neji";
+  const profession="Student at GoMyCode Academy";
+  const bio="Hello my name is Mamia I'm 29 years old. I am from Tunisia. I have master degree in Pablic Law and I am currently a student at GoMyCode Academy.";
+  const handleName=(message)=> alert(message);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   <Profilee FullName={FullName} profession={profession} bio={bio} handleName={handleName} />
+          </div>
+  
+ );
 }
 
 export default App;
