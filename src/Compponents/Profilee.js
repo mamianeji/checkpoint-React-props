@@ -17,5 +17,10 @@ function Profilee({FullName, profession, bio, handleName}) {
     
   )
 }
+ComponentProfile.propTypes={
+    FullName:propTypes.string.isRequired,
+    bio:propTypes.string.isRequired,
+    profession:propTypes.string.isRequired,
+    handleName:propTypes.func
 
 export default Profilee
